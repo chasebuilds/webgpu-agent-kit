@@ -1,0 +1,7 @@
+{
+  "title": "Raymarched SDF scene",
+  "summary": "A sphere melts into a rounded box above a floor, rendered in a fragment shader with signed distance fields, soft shadows and a mouse-orbit camera.",
+  "tags": ["raymarching", "sdf", "fragment shader", "lighting", "shadows", "fullscreen"],
+  "kind": "render",
+  "files": ["main.js", "shader.wgsl"]
+}

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "black-hole-lensing",
+    "title": "Black hole lensing",
+    "summary": "A point mass bends a star field and a glowing band into an Einstein ring. Move the pointer to drag the black hole around.",
+    "tags": [
+      "black hole",
+      "gravitational lensing",
+      "fragment shader",
+      "stars",
+      "fullscreen",
+      "space"
+    ],
+    "kind": "render",
+    "files": [
+      "main.js",
+      "shader.wgsl"
+    ]
+  },
+  {
+    "id": "compute-boids",
+    "title": "Compute-shader boids",
+    "summary": "2,048 flocking birds simulated on the GPU. A compute pass updates two ping-pong storage buffers, then a render pass draws them.",
+    "tags": [
+      "compute",
+      "boids",
+      "flocking",
+      "storage buffer",
+      "ping-pong",
+      "simulation"
+    ],
+    "kind": "compute",
+    "files": [
+      "main.js",
+      "compute.wgsl",
+      "render.wgsl"
+    ]
+  },
+  {
+    "id": "depth-cube",
+    "title": "Depth-tested 3D cube",
+    "summary": "A lit, spinning cube with a perspective matrix, an index buffer, back-face culling and a depth texture that follows the canvas size.",
+    "tags": [
+      "3d",
+      "cube",
+      "depth buffer",
+      "matrix",
+      "index buffer",
+      "vertex buffer",
+      "render"
+    ],
+    "kind": "render",
+    "files": [
+      "main.js",
+      "shader.wgsl"
+    ]
+  },
+  {
+    "id": "game-of-life",
+    "title": "Game of life",
+    "summary": "Conway's cellular automaton on the GPU. A compute pass steps the grid, cells fade color with age. Click to reseed.",
+    "tags": [
+      "compute",
+      "game of life",
+      "cellular automaton",
+      "storage buffer",
+      "ping-pong",
+      "simulation"
+    ],
+    "kind": "compute",
+    "files": [
+      "main.js",
+      "compute.wgsl",
+      "render.wgsl"
+    ]
+  },
+  {
+    "id": "image-blur",
+    "title": "Image blur with compute",
+    "summary": "A compute shader draws a test image into a storage texture, then a two-pass separable Gaussian-style blur softens it. The radius breathes in and out.",
+    "tags": [
+      "compute",
+      "blur",
+      "image",
+      "storage texture",
+      "post-processing",
+      "separable filter"
+    ],
+    "kind": "compute",
+    "files": [
+      "main.js",
+      "generate.wgsl",
+      "blur.wgsl",
+      "show.wgsl"
+    ]
+  },
+  {
+    "id": "instanced-galaxy",
+    "title": "Instanced particle galaxy",
+    "summary": "24,000 glowing particles drawn with one instanced draw call, read from a storage buffer, with additive blending.",
+    "tags": [
+      "particles",
+      "instancing",
+      "storage buffer",
+      "blending",
+      "render"
+    ],
+    "kind": "render",
+    "files": [
+      "main.js",
+      "shader.wgsl"
+    ]
+  },
+  {
+    "id": "mandelbrot-zoom",
+    "title": "Mandelbrot zoom",
+    "summary": "An endless zoom into the Mandelbrot set with smooth coloring, computed per pixel in a fragment shader.",
+    "tags": [
+      "mandelbrot",
+      "fractal",
+      "fragment shader",
+      "fullscreen",
+      "zoom"
+    ],
+    "kind": "render",
+    "files": [
+      "main.js",
+      "shader.wgsl"
+    ]
+  },
+  {
+    "id": "raymarched-sdf",
+    "title": "Raymarched SDF scene",
+    "summary": "A sphere melts into a rounded box above a floor, rendered in a fragment shader with signed distance fields, soft shadows and a mouse-orbit camera.",
+    "tags": [
+      "raymarching",
+      "sdf",
+      "fragment shader",
+      "lighting",
+      "shadows",
+      "fullscreen"
+    ],
+    "kind": "render",
+    "files": [
+      "main.js",
+      "shader.wgsl"
+    ]
+  },
+  {
+    "id": "texture-sampling",
+    "title": "Texture sampling",
+    "summary": "An 8 by 8 pixel image uploaded with writeTexture and drawn twice: nearest filtering on the left, linear on the right.",
+    "tags": [
+      "texture",
+      "sampler",
+      "filtering",
+      "writeTexture",
+      "render",
+      "pixel art"
+    ],
+    "kind": "render",
+    "files": [
+      "main.js",
+      "shader.wgsl"
+    ]
+  },
+  {
+    "id": "triangle",
+    "title": "Spinning triangle",
+    "summary": "The smallest complete WebGPU program: one render pipeline, a uniform buffer and a vertex-colored triangle.",
+    "tags": [
+      "starter",
+      "render",
+      "uniform",
+      "pipeline",
+      "hello world"
+    ],
+    "kind": "render",
+    "files": [
+      "main.js",
+      "shader.wgsl"
+    ]
+  }
+]

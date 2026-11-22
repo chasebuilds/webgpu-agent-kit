@@ -1,0 +1,7 @@
+{
+  "title": "Compute-shader boids",
+  "summary": "2,048 flocking birds simulated on the GPU. A compute pass updates two ping-pong storage buffers, then a render pass draws them.",
+  "tags": ["compute", "boids", "flocking", "storage buffer", "ping-pong", "simulation"],
+  "kind": "compute",
+  "files": ["main.js", "compute.wgsl", "render.wgsl"]
+}

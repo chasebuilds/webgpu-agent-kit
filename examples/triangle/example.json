@@ -1,0 +1,7 @@
+{
+  "title": "Spinning triangle",
+  "summary": "The smallest complete WebGPU program: one render pipeline, a uniform buffer and a vertex-colored triangle.",
+  "tags": ["starter", "render", "uniform", "pipeline", "hello world"],
+  "kind": "render",
+  "files": ["main.js", "shader.wgsl"]
+}

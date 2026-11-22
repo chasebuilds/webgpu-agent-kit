@@ -1,0 +1,7 @@
+{
+  "title": "Black hole lensing",
+  "summary": "A point mass bends a star field and a glowing band into an Einstein ring. Move the pointer to drag the black hole around.",
+  "tags": ["black hole", "gravitational lensing", "fragment shader", "stars", "fullscreen", "space"],
+  "kind": "render",
+  "files": ["main.js", "shader.wgsl"]
+}

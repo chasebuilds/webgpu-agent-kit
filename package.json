@@ -1,0 +1,33 @@
+{
+  "name": "webgpu-agent-kit",
+  "version": "1.0.0",
+  "description": "A toolkit that helps AI coding agents write working WebGPU code: examples, a WGSL checker, docs, and an MCP server.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Chase Builds",
+  "homepage": "https://chasebuilds.github.io/webgpu-agent-kit/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chasebuilds/webgpu-agent-kit.git"
+  },
+  "keywords": ["webgpu", "wgsl", "mcp", "ai-agents", "claude-code", "cursor", "shaders", "naga"],
+  "bin": {
+    "webgpu-agent-kit": "bin/cli.js"
+  },
+  "files": ["bin", "src", "examples", "topics", "AGENTS.snippet.md", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=24.12"
+  },
+  "scripts": {
+    "build:index": "node scripts/build-index.mjs",
+    "build:site": "node scripts/build-site.mjs",
+    "demo": "node scripts/build-site.mjs && node scripts/serve.mjs dist",
+    "lint": "node scripts/lint.mjs",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "naga-wasm": "^30.2.0",
+    "zod": "^4.6.7"
+  }
+}

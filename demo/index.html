@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebGPU Agent Kit: live examples</title>
+  <meta name="description" content="Ten original WebGPU examples running live in your browser, with source. Part of a toolkit that helps AI coding agents write working WebGPU code.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%23ffb26b%27/%3E%3Cpath d=%27M16 6l9 18H7z%27 fill=%27%231b1320%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="brand" href="#top">Chase Builds</a>
+    <nav class="pills" aria-label="Sections">
+      <a href="#gallery">Examples</a>
+      <a href="#use">Use it</a>
+      <a href="https://github.com/chasebuilds/webgpu-agent-kit">GitHub</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero glass">
+      <p class="eyebrow">webgpu-agent-kit</p>
+      <h1>WebGPU examples that AI coding agents can look up, copy and check.</h1>
+      <p class="lede">
+        WebGPU lets a web page use the graphics card for 3D scenes and heavy math. It is easy for an AI assistant to get wrong.
+        This kit gives the assistant tested examples, a checker that catches shader mistakes, and short notes on the tricky parts.
+        Every example below is running live in your browser right now.
+      </p>
+      <p id="status" class="status" role="status">Checking WebGPU support...</p>
+    </section>
+
+    <section id="gallery" class="gallery" aria-label="Examples"></section>
+
+    <section id="use" class="use">
+      <h2>Use it with your coding agent</h2>
+      <div class="use-grid">
+        <article class="glass">
+          <h3>From a terminal</h3>
+          <pre><code>npx github:chasebuilds/webgpu-agent-kit examples search particles
+npx github:chasebuilds/webgpu-agent-kit examples pull compute-boids ./boids
+npx github:chasebuilds/webgpu-agent-kit check shader.wgsl
+npx github:chasebuilds/webgpu-agent-kit docs buffers</code></pre>
+          <p>Needs Node 24.12 or newer.</p>
+        </article>
+        <article class="glass">
+          <h3>As an MCP server</h3>
+          <p>Works in Claude Code, Cursor and other MCP clients. Add this to the client's MCP settings:</p>
+          <pre><code>{
+  "mcpServers": {
+    "webgpu-agent-kit": {
+      "command": "npx",
+      "args": ["-y", "github:chasebuilds/webgpu-agent-kit", "mcp"]
+    }
+  }
+}</code></pre>
+        </article>
+        <article class="glass">
+          <h3>Paste into AGENTS.md</h3>
+          <p>This short block tells your agent when to use the kit.</p>
+          <pre><code id="snippet">Loading...</code></pre>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>
+      Built by Chase Builds. MIT licensed.
+      Inspired by the <strong>vgpu</strong> project; all code here is original.
+      Shader validation uses naga, compiled to WebAssembly.
+    </p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

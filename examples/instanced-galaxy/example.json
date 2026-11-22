@@ -1,0 +1,7 @@
+{
+  "title": "Instanced particle galaxy",
+  "summary": "24,000 glowing particles drawn with one instanced draw call, read from a storage buffer, with additive blending.",
+  "tags": ["particles", "instancing", "storage buffer", "blending", "render"],
+  "kind": "render",
+  "files": ["main.js", "shader.wgsl"]
+}

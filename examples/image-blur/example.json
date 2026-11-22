@@ -1,0 +1,7 @@
+{
+  "title": "Image blur with compute",
+  "summary": "A compute shader draws a test image into a storage texture, then a two-pass separable Gaussian-style blur softens it. The radius breathes in and out.",
+  "tags": ["compute", "blur", "image", "storage texture", "post-processing", "separable filter"],
+  "kind": "compute",
+  "files": ["main.js", "generate.wgsl", "blur.wgsl", "show.wgsl"]
+}

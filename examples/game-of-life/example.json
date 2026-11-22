@@ -1,0 +1,7 @@
+{
+  "title": "Game of life",
+  "summary": "Conway's cellular automaton on the GPU. A compute pass steps the grid, cells fade color with age. Click to reseed.",
+  "tags": ["compute", "game of life", "cellular automaton", "storage buffer", "ping-pong", "simulation"],
+  "kind": "compute",
+  "files": ["main.js", "compute.wgsl", "render.wgsl"]
+}

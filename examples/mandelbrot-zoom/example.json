@@ -1,0 +1,7 @@
+{
+  "title": "Mandelbrot zoom",
+  "summary": "An endless zoom into the Mandelbrot set with smooth coloring, computed per pixel in a fragment shader.",
+  "tags": ["mandelbrot", "fractal", "fragment shader", "fullscreen", "zoom"],
+  "kind": "render",
+  "files": ["main.js", "shader.wgsl"]
+}

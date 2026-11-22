@@ -1,0 +1,7 @@
+{
+  "title": "Depth-tested 3D cube",
+  "summary": "A lit, spinning cube with a perspective matrix, an index buffer, back-face culling and a depth texture that follows the canvas size.",
+  "tags": ["3d", "cube", "depth buffer", "matrix", "index buffer", "vertex buffer", "render"],
+  "kind": "render",
+  "files": ["main.js", "shader.wgsl"]
+}
