@@ -115,3 +115,11 @@ To add an example, create `examples/<id>/` with `main.js`, your `.wgsl` files an
 Inspired by the [`vgpu`](https://github.com/vercel-labs/vgpu) project from Vercel Labs and its command line for browsing WebGPU examples. This repository shares no code with it; the examples, checker, docs and MCP server here are written from scratch.
 
 MIT license. Built by Chase Builds.
+
+## More from Chase Builds
+
+- **[pdf-qa-local](https://github.com/chasebuilds/pdf-qa-local)**: Ask questions about your PDFs with AI that runs on your own computer, so documents never leave the office.
+- **[web-data-extractor](https://github.com/chasebuilds/web-data-extractor)**: Public web pages to a checked spreadsheet, only where the site allows it.
+- **[sheets-automations](https://github.com/chasebuilds/sheets-automations)**: Google Sheets that send summaries, invoices, overdue reminders and low-stock alerts on their own. ([live demo](https://chasebuilds.github.io/sheets-automations/))
+
+[All projects, sorted by industry](https://github.com/chasebuilds) · [chasebuilds.github.io](https://chasebuilds.github.io)
